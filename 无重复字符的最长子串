@@ -1,0 +1,20 @@
+class sol:
+	def nocf(self , s:str)->int:
+		ll=len(s)
+		rk,num=-1,0
+		cf=set()
+		
+		for i in range(ll):
+			if i !=0:
+				cf.remove(s[i-1])
+			while rk+1<ll and s[rk+1] not in cf :
+				cf.add(s[rk+1])
+				print(cf,i)
+				rk=rk+1
+			num=max(num,rk+1-i)
+			print(rk,cf)
+		return num
+
+a=sol.nocf(1,"fydufukgkjfydhtd")
+print (a)
+

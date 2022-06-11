@@ -1,0 +1,17 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt 
+print ("我是谁")
+
+
+
+a="asdc"
+print(a[1])
+ss=set()
+ss.add(a[0])
+#ss.remove(a[0])
+print(ss)
+
+
+soso={0:[1,2,3,4],1:[1,2,3,4]}
+print (soso)
